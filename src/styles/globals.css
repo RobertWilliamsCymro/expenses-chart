@@ -25,3 +25,37 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+.bg-cream {
+  --tw-bg-opacity: 1;
+  background-color: hsl(27 66% 92% / var(--tw-bg-opacity));
+}
+
+.bg-pale-orange {
+  --tw-bg-opacity: 1;
+  background-color: hsl(33 100% 98% / var(--tw-bg-opacity));
+}
+
+.bg-soft-red {
+  --tw-bg-opacity: 1;
+  background-color: hsl(10 79% 65% / var(--tw-bg-opacity));
+}
+
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+@media (min-width: 640px) {
+  .sm\:w-\[90rem\] {
+    width: 90rem;
+  }
+}
