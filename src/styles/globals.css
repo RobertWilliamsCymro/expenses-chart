@@ -59,3 +59,8 @@ body {
     width: 90rem;
   }
 }
+
+@font-face {
+  font-family: "DM Sans";
+  src: url("../fonts/DMSans-Regular.ttf");
+}
