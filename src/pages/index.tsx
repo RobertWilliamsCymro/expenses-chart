@@ -170,7 +170,7 @@ export default function Home() {
     
   };
   
-  
+  Chart.defaults.font.size = 15;
   new Chart(
     document.getElementById('spending-last-7-days') as ChartItem,
     {
