@@ -103,7 +103,10 @@ export default function Home() {
       tooltipEl.appendChild(table);
       chart.canvas.parentNode.appendChild(tooltipEl);
     }
-  
+
+    // add something like :P
+    // if(tooltipEl.hover === false) tooltipEl.style.opacity = 0.5
+    // I basically need to add an image hover class and then play about with the opacity
     return tooltipEl;
   };
   const externalTooltipHandler = (context: any) => {
@@ -119,20 +122,11 @@ export default function Home() {
   
     // Set Text
     if (tooltip.body) {
-      const titleLines = tooltip.title || [];
+      
       const bodyLines = tooltip.body.map((b: any) => b.lines);
-  
-      const tableHead = document.createElement('thead');
-  
-      titleLines.forEach((title: string) => {
-        const tr = document.createElement('tr') as HTMLTableRowElement;
-        tr.style.borderWidth = "0";
-        tableHead.appendChild(tr);
-      });
-  
+    
       const tableBody = document.createElement('tbody');
-      bodyLines.forEach((body: string, i: string | number) => {
-                        
+      bodyLines.forEach((body: string) => {                      
         const tr = document.createElement('tr') as HTMLTableRowElement;
         tr.style.backgroundColor = 'inherit';
         tr.style.borderWidth = "0";
@@ -154,7 +148,6 @@ export default function Home() {
       }
   
       // Add new children
-      tableRoot.appendChild(tableHead);
       tableRoot.appendChild(tableBody);
     }
   
@@ -197,7 +190,7 @@ export default function Home() {
           tooltip: {
             enabled: false,
             position: 'nearest',
-            external: externalTooltipHandler
+            external: externalTooltipHandler,
           }
         }
       },
