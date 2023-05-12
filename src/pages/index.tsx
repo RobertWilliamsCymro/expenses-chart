@@ -91,7 +91,7 @@ export default function Home() {
       tooltipEl.style.background = 'rgba(0, 0, 0, 0.7)';
       tooltipEl.style.borderRadius = '3px';
       tooltipEl.style.color = 'white';
-      tooltipEl.style.opacity = 0.5;
+      tooltipEl.style.opacity = 1;
       tooltipEl.style.pointerEvents = 'none';
       tooltipEl.style.position = 'absolute';
       tooltipEl.style.transform = 'translate(-50%, 0)';
@@ -161,11 +161,13 @@ export default function Home() {
     const {offsetLeft: positionX, offsetTop: positionY} = chart.canvas;
   
     // Display, position, and set styles for font
-    tooltipEl.style.opacity = 0.2;
+    tooltipEl.style.opacity = 1;
     tooltipEl.style.left = positionX + tooltip.caretX + 'px';
     tooltipEl.style.top = positionY + tooltip.caretY + 'px';
     tooltipEl.style.font = tooltip.options.bodyFont.string;
     tooltipEl.style.padding = tooltip.options.padding + 'px ' + tooltip.options.padding + 'px';
+
+    
   };
   
   
