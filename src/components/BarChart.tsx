@@ -7,8 +7,8 @@ import {
 } from 'chart.js';
 import { Bar } from 'react-chartjs-2';
 import { spendingData } from '../pages/SpendingData';
-import { SetBackgroundColour, SetHoverBackgroundColour } from '@/components/BackgroundColours';
-import { externalTooltipHandler } from './ToolTip';
+import { SetBackgroundColour, SetHoverBackgroundColour } from '@/BackgroundColours';
+import { externalTooltipHandler } from '../ToolTip';
 
 ChartJS.register(
   CategoryScale,
@@ -38,11 +38,11 @@ export const BarChart = () => {
       }
     },
     plugins: {
-    tooltip: {
-      enabled: false,
-      external: externalTooltipHandler,
+      tooltip: {
+        enabled: false,
+        external: externalTooltipHandler,
+      }
     }
-  }
   };
 
   const data = {

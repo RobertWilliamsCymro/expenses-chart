@@ -13,7 +13,7 @@ export default function Home() {
               <div className="flex py-8 ml-8">
                 <div className="justify-between">
                   <p className="mb-2">My balance</p>
-                  <p className="text-3xl font-normal">$921.48</p>
+                  <p className="text-3xl font-bold">$921.48</p>
                 </div>
                 <Image className="ml-auto mr-8" src={Logo} alt=""></Image>
               </div>
