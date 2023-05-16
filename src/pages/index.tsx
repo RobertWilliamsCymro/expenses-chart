@@ -9,7 +9,7 @@ export default function Home() {
     <>
       <title>Frontend Mentor | Expenses chart component</title>
       <main className="flex flex-col w-[375px] sm:w-[1275px] my-auto min-h-screen p-6 mx-auto font-dm-sans justify-center">
-          <div className="bg-soft-red text-white mb-2 rounded-2xl">
+          <div className="bg-soft-red text-very-pale-orange mb-2 rounded-2xl">
               <div className="flex py-8 ml-8">
                 <div className="justify-between">
                   <p className="mb-2">My balance</p>

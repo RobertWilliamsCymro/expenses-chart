@@ -4,12 +4,12 @@
 
     if (!tooltipEl) {
       tooltipEl = document.createElement('div') as HTMLDivElement;
-      tooltipEl.style.background = 'rgba(0, 0, 0, 0.7)';
+      tooltipEl.style.background = 'hsl(25 47% 15%)';
       tooltipEl.style.borderRadius = '3px';
       tooltipEl.style.color = 'white';
       tooltipEl.style.opacity = '1';
       tooltipEl.style.pointerEvents = 'none';
-      tooltipEl.style.position = 'fixed';
+      tooltipEl.style.position = 'absolute';
       tooltipEl.style.transform = 'translate(-50%, 0)';
       tooltipEl.style.transition = 'all .1s ease';
 
@@ -39,7 +39,6 @@
     if (tooltip.body) {
 
       const bodyLines = tooltip.body.map((b: any) => b.lines);
-
       const tableBody = document.createElement('tbody');
       bodyLines.forEach((toolTipBody: string) => {
         const tableRow = document.createElement('tr') as HTMLTableRowElement;

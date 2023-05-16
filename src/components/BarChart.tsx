@@ -17,6 +17,7 @@ ChartJS.register(
   Tooltip
 );
 
+const barChartValue = 52.36;
 ChartJS.defaults.font.size = 18;
 
 export const BarChart = () => {
@@ -44,16 +45,15 @@ export const BarChart = () => {
       }
     }
   };
-
   const data = {
     labels: spendingData.map(row => row.day),
     datasets: [
       {
         label: '$',
         data: spendingData.map(row => row.amount),
-        backgroundColor: SetBackgroundColour(),
+        backgroundColor: SetBackgroundColour(barChartValue),
         borderRadius: 5,
-        hoverBackgroundColor: SetHoverBackgroundColour(),
+        hoverBackgroundColor: SetHoverBackgroundColour(barChartValue),
       }
     ],
   };
