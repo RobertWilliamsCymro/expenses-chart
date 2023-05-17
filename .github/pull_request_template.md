@@ -11,6 +11,6 @@ Please include a summary of the changes and the related issue. Please also inclu
 - [ ] If changes have been made to the front end, I have tested and mitigated accessibility issues
 - [ ] I have considered and mitigated any security issues introduced by my changes
 - [ ] New and existing tests pass locally with my changes
-- [ ] I have updated the README if relevant
+- [ ] I have updated the README if relevants
 
 ## Other notes
