@@ -1,3 +1,3 @@
 ## Test template
 
-add more content
+turn and face the strange
