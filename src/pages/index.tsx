@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
       <title>Frontend Mentor | Expenses chart component</title>
-      <main className="flex flex-col w-[375px] sm:w-[1275px] my-auto min-h-screen p-6 mx-auto font-dm-sans justify-center">
+      <main className="flex flex-col w-[375px] sm:w-[600px] my-auto min-h-screen p-6 mx-auto font-dm-sans justify-center">
           <div className="bg-soft-red text-very-pale-orange mb-2 rounded-2xl">
               <div className="flex py-8 ml-8">
                 <div className="justify-between">
@@ -19,7 +19,7 @@ export default function Home() {
               </div>
             </div>
           <div className="mt-6 bg-pale-orange rounded-2xl">
-            <h1 className="p-8 font-bold text-xl sm:text-6xl">Spending - Last 7 Days</h1>
+            <h1 className="p-8 font-bold text-3xl">Spending - Last 7 Days</h1>
             <div className="px-8">
               <BarChart />
             </div>
