@@ -6,7 +6,7 @@ import {
   Tooltip
 } from 'chart.js';
 import { Bar } from 'react-chartjs-2';
-import { spendingData } from '../pages/SpendingData';
+import { spendingData } from '../SpendingData';
 import { SetBackgroundColour, SetHoverBackgroundColour } from '@/BackgroundColours';
 import { externalTooltipHandler } from '../ToolTip';
 
